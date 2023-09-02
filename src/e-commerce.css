@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: #fff;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cartAmount {
+    position: absolute;
+    background-color: #fc0303;
+    font-size: 16px;
+    color: #fff;
+    top: -15px;
+    right: -10px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.item  {
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bi-x-lg {
+    color: #fc0303;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bi-dash-lg {
+    color: #fc0303;
+}
+
+.bi-plus-lg {
+    color: #008000;
+}
+
+.homeBtn, .checkout, .removeAll {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x {
+    display: flex;
+    width: 195px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price {
+    background-color: #212529;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
